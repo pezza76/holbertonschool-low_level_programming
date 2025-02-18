@@ -1,27 +1,28 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
-/* more headers goes there */
 
 /**
- * main - entry point
+ * main - Generates a random number and checks if it is even or odd.
  *
- * Return: Always 0
-*/
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	if (n > 0) {
-		printf("%d: is positive\n", n);
+
+    /* Check if the number is even or odd */
+	if (n % 2 == 0)
+	{
+		printf("%d is an even number\n", n);
 	}
-	else if (n == 0) {
-		printf("d: is zero\n", n);
-	else {
-		printf("%d: is negative\n", n);
+	else
+	{
+		printf("%d is an odd number\n", n);
 	}
+
 	return (0);
 }
