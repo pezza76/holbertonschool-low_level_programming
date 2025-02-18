@@ -15,13 +15,16 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
     /* Check if the number is even or odd */
-	if (n % 2 == 0)
+	if (n > 2 == 0)
 	{
-		printf("%d is an even number\n", n);
+		printf("%d: is positive\n", n);
 	}
+	else if
+	{
+		printf("%d: is zero\n", n);
 	else
 	{
-		printf("%d is an odd number\n", n);
+		printf("%d: is negative\n", n);
 	}
 
 	return (0);
