@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - function that prints the alphabet followed by a new line
  *
- * Return: Always 0
+ * Return: void
 */
 
-int main(void)
+void print_alphabet(void)
 {
 	char c;
 	for (c = 'a'; c <= 'z'; c++)
@@ -14,6 +14,4 @@ int main(void)
 		_putchar(c);
 	}
 	_putchar('\n');
-
-	return (0);
 }
