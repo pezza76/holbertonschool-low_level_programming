@@ -3,6 +3,7 @@
 
 /**
  *_isalpha - checks if input is a letter
+ * @c: The character to be checked
  *
  *Return: int
 */
