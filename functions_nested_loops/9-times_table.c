@@ -21,13 +21,17 @@ void times_table(void)
           {
             _putchar(r / 10 + '0');
           }
+	  else if(i == 0)
+	{
+		continue;
+	}
 	  else
 	  {
 		  _putchar('.');
 	  }
           _putchar(r % 10 + '0');
           
-          if (j != 0)
+          if (j != 9)
           {
           _putchar(',');
           _putchar('.');
