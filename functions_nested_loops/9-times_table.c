@@ -23,14 +23,14 @@ void times_table(void)
           }
 	  if (r <= 9 && j > 0)
 	  {
-		  _putchar('.');
+		  _putchar(' ');
 	  }
           _putchar(r % 10 + '0');
           
           if (j != 9)
           {
           _putchar(',');
-          _putchar('.');
+          _putchar(' ');
           }
           
       }
