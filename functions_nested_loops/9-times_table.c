@@ -23,7 +23,7 @@ void times_table(void)
           }
 	  if (r < 9 && j > 0)
 	  {
-		  _putchar('n');
+		  _putchar('.');
 	  }
           _putchar(r % 10 + '0');
           
