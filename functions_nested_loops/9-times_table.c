@@ -23,7 +23,7 @@ void times_table(void)
           }
 	  else if(i == 0)
 	{
-		continue;
+		break;
 	}
 	  else
 	  {
