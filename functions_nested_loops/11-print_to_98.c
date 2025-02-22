@@ -29,7 +29,7 @@ void print_to_98(int n)
         }
         }
     }
-    putchar('\n);
+    putchar('\n');
 
     return (0);
 }
