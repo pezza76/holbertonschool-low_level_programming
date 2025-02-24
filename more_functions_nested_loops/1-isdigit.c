@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  *_isdigit - checks if c is an integer between 0-9
