@@ -16,7 +16,7 @@ void print_triangle(int size)
 
 	if (size <= 0)
 	{
-		puchar('\n');
+		_puchar('\n');
 	}
 	else
 	{
