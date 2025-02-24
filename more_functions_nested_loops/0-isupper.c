@@ -10,12 +10,12 @@
 
 int _isupper(int c)
 {
-       if (_issupper(c))
-       {
-               return (1);
-       }
-       else
-       {
-              return (0);
-        }
+	if (_isupper(c))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
