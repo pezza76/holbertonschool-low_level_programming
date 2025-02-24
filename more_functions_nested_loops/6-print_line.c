@@ -3,6 +3,7 @@
 /**
  *print_line - prints a line n times
  *
+ * @n: int
  *Return: int
 */
 
