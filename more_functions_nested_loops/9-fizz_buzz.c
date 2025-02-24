@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - prints numbers 1-100 and replaces some numbers with Fizz, Buzz or Fizbuzz
+ *main - FizzBuzz challenge
  *
  *Return: void
 */
