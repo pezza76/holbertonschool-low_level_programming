@@ -15,7 +15,7 @@ int main(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			print("FizzBuzz/n");
+			printf("FizzBuzz/n");
 		}
 		else if (i % 3 == 0)
 		{
