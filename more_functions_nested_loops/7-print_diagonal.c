@@ -3,7 +3,7 @@
 /**
  *print_diagonal - prints diagonal line
  *
- *@n - integer
+ *@n: integer
  *Return: int
 */
 
