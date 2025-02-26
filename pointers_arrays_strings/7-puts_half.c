@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *puts_half - prints first half of string
+ *puts_half - prints second half of string
  *
  *@str: pointer
  *Return: void
@@ -12,11 +12,12 @@ void puts_half(char *str)
 {
 	int len = 0;
 	int i;
+	char *x = str;
 
-	while (*str != '\0')
+	while (*x != '\0')
 	{
 		len++;
-		str++;
+		x++;
 	}
 
 	for (i = 0; i < len; i++)
