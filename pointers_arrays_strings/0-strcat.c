@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strcar - appends a string to another
+ * strcat - appends a string to another
  *
  * @dest: pointer
  * @src: pointer
