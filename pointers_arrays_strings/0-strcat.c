@@ -1,12 +1,6 @@
 #include "main.h"
 
-/**
- *strcat - adds two strings together
- *
- *@dest: string
- *@src: string
- *Return: pointer
-*/
+
 
 char *_strcat(char *dest, char *src)
 {
