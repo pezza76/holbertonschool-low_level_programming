@@ -14,6 +14,7 @@ int _atoi(char *s)
     int len = 0;
     int digit = 0;
     int num = 0;
+    int i;
 
     while (*y != '\0')
     {
@@ -29,11 +30,11 @@ int _atoi(char *s)
 
 
 
-    for (int i = 0; i < len; i++)
+    for (i = 0; i < len; i++)
     {
         if (s[i] >= 48 && s[i] <= 57)
         {
-            num = num * 10 + x[i] -  '0';
+            num = num * 10 + s[i] -  '0';
 
         }
     }
