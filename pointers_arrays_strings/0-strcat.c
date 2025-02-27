@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+ * strcar - appends a string to another
+ *
+ * @dest: pointer
+ * @src: pointer
+ * Return: pointer
+*/
 
 
 char *_strcat(char *dest, char *src)
@@ -17,7 +23,7 @@ char *_strcat(char *dest, char *src)
 		dest++;
 		src++;
 	}
-	
+
 	*dest = '\0';
 	return (x);
 
