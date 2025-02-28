@@ -5,6 +5,7 @@
  *
  *@dest: pointer
  *@src: pointer
+ *@n: int
  *Return: pointer
 */
 
