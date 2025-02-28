@@ -7,7 +7,7 @@
  *Return: char
 */
 
-char *string_toupper(char str*);
+char *string_toupper(char str*)
 {
 	char *x = str;
 	int i = 0;
