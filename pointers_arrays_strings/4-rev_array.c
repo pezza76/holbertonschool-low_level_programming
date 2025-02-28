@@ -27,7 +27,7 @@ void reverse_array(int *a, int n)
 			*x = temp;
 			x--;
 			a++;
-		}
+	
 	}
 	return (0);
 }
