@@ -15,20 +15,20 @@ void reverse_array(int *a, int n)
 	int i = 0;
 	int j;
 
-	for ( ; i < n-1; i++)
+	for ( ; i < n - 1; i++)
 	{
 		x++;
 	}
 
-	for (j = 0;  j < n/2; j++)
+	for (j = 0;  j < n / 2; j++)
 	{
-			int temp = *a;
-			*a = *x;
-			*x = temp;
-			x--;
-			a++;
-	
+		int temp = *a;
+		*a = *x;
+		*x = temp;
+		x--;
+		a++;
+
 	}
-	
+
 }
 
