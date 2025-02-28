@@ -4,7 +4,7 @@
  *string_toupper - converts lowercase to uppercase
  *
  *@str: a string
- *Return: char
+ *Return: address
 */
 
 char *string_toupper(char *str)
@@ -27,4 +27,5 @@ char *string_toupper(char *str)
 			str++;
 		}
 	}
+	return (str);
 }
