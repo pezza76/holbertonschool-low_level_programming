@@ -12,14 +12,14 @@ char *leet(char *str)
 
 	char lower[] = {'a', 'e', 'o', 't', 'l'};
 	char upper[] = {'A', 'E', 'O', 'T', 'L'};
-	char num[] = {'4','3', '0', '7', '1'};
+	char num[] = {'4', '3', '0', '7', '1'};
 
 	char *x = str;
 	int i;
 	int j;
-	
 
-       
+
+
 
 	for (i = 0; str[i] != '\0'; i++)
 
@@ -30,7 +30,7 @@ char *leet(char *str)
 			{
 				*x = num[j];
 			}
-		
+
 		}
 		x++;
 	}
