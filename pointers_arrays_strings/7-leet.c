@@ -15,7 +15,6 @@ char *leet(char *str)
 	char num[] = {'3', '0', '7', '1'};
 
 	char *x = str;
-	int len = 0;
 	int i;
 	int j;
 	
