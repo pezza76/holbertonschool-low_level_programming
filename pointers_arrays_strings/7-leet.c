@@ -15,19 +15,14 @@ char *leet(char *str)
 	char num[] = {'3', '0', '7', '1'};
 
 	char *x = str;
-	char *y = str;
 	int len = 0;
 	int i;
 	int j;
 	
 
-        while (*y != '\0')
-	{
-		len++;
-		y++;
-	}
+       
 
-	for (i = 0; i < len; i++)
+	for (i = 0; str[i] != '\0'; i++)
 
 	{
 		for (j = 0; j < 4; j++)
