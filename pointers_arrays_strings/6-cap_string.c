@@ -23,7 +23,7 @@ char *cap_string(char *str)
 		{
 
 			if (is_new_word && *x >= 'a' && *x <= 'z')
-			{		
+			{
 				*x = *x - 32;
 				is_new_word = 0;
 			}
