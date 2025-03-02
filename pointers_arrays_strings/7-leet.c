@@ -24,7 +24,7 @@ char *leet(char *str)
 	for (i = 0; str[i] != '\0'; i++)
 
 	{
-		for (j = 0; j < 4; j++)
+		for (j = 0; j < 5; j++)
 		{
 			if (*x == lower[j] || *x == upper[j])
 			{
