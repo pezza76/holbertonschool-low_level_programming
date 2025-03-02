@@ -10,9 +10,9 @@
 char *leet(char *str)
 {
 
-	char lower[] = {'e', 'o', 't', 'l'};
-	char upper[] = {'E', 'O', 'T', 'L'};
-	char num[] = {'3', '0', '7', '1'};
+	char lower[] = {'a', 'e', 'o', 't', 'l'};
+	char upper[] = {'A', 'E', 'O', 'T', 'L'};
+	char num[] = {'4','3', '0', '7', '1'};
 
 	char *x = str;
 	int i;
