@@ -5,6 +5,7 @@
  *
  *@b: character
  *@n: int
+ *@s: pointer
  *Return: pointer
 */
 
