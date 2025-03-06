@@ -6,7 +6,7 @@
  *@s: string to be checked
  *@accept: string to be compared
  *
- * Return:
+ * Return: int
 */
 
 unsigned int _strspn(char *s, char *accept)
