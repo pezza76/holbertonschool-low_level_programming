@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- *_strstr - function finds the first occurrence of the substring needle in the string haystack
+ *_strstr - function finds first occurrence of the string needle in haystack
  *
  *@haystack: pointer
  *@needle: pointer
@@ -13,7 +13,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	int i;
-	
+
 	if (*needle == '\0')
 	{
 		return (haystack);
@@ -25,16 +25,14 @@ char *_strstr(char *haystack, char *needle)
 
 		if (*haystack == *needle)
 		{
-			do 
-			{
-				if(needle[i + 1] == '\0')
+			do {
+				if (needle[i + 1] == '\0')
 				{
 
-					return(haystack);
+					return (haystack);
 				}
 				i++;
-			}
-			while (haystack[i] == needle[i]);
+			}	while (haystack[i] == needle[i]);
 		}
 
 		haystack++;
