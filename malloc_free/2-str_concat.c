@@ -35,15 +35,15 @@ char *str_concat(char *s1, char *s2)
 		temp1++;
 	}
 
-	    while (*temp2 != '\0')
-        {
-                len2++;
-                temp2++;
-        }
-	
+	while (*temp2 != '\0')
+	{
+		len2++;
+		temp2++;
+	}
+
 	combo = malloc((len1 + len2 + 1) * sizeof(char));
 	original = combo;
-	
+
 	if (combo == NULL)
 	{
 		return (NULL);
@@ -62,9 +62,9 @@ char *str_concat(char *s1, char *s2)
 		combo++;
 		s2++;
 	}
-	
+
 	*combo = '\0';
-	
+
 	return (original);
-	
+
 }
