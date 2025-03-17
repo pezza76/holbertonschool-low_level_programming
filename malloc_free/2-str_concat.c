@@ -43,6 +43,11 @@ char *str_concat(char *s1, char *s2)
 	
 	combo = malloc((len1 + len2 + 1) * sizeof(char));
 	original = combo;
+	
+	if (combo == NULL)
+	{
+		return (NULL);
+	}
 
 	while (*s1 != '\0')
 	{
