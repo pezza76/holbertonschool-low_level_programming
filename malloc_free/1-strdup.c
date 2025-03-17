@@ -13,6 +13,7 @@ char *_strdup(char *str)
 {	
 	char *original = str;
 	int len = 0;
+	char *copy;
 
 	if (str == NULL)
 	{
@@ -25,7 +26,7 @@ char *_strdup(char *str)
 		str++;
 	}
 
-	char *copy = (char *)malloc(len + 1);
+	copy = (char *)malloc(len + 1);
 
 	if (copy == NULL)
 	{
