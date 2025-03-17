@@ -18,7 +18,6 @@ char *str_concat(char *s1, char *s2)
 	char *temp2 = s2;
 	int len1 = 0;
 	int len2 = 0;
-	int i = 0;
 
 	if (s1 ==  NULL)
 	{
