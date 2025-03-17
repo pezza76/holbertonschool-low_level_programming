@@ -5,7 +5,7 @@
 /**
  *_strdup - returns a pointer to a newly allocated space in memory
  *
- *str: char
+ *@str: char
  *Return: pointer
 */
 
