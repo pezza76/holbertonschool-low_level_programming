@@ -14,6 +14,7 @@ char *_strdup(char *str)
 	char *original = str;
 	int len = 0;
 	char *copy;
+	char *temp;
 
 	if (str == NULL)
 	{
@@ -35,7 +36,7 @@ char *_strdup(char *str)
 
 	return (copy);
 
-	char *temp = copy;
+	temp = copy;
 	str = original;
 
 	while (*str != '\0')
