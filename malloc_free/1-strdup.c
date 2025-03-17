@@ -10,7 +10,7 @@
 */
 
 char *_strdup(char *str)
-{	
+{
 	char *original = str;
 	int len = 0;
 	char *copy;
@@ -34,7 +34,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	
+
 
 	temp = copy;
 	str = original;
