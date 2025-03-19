@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- *calloc - similar to calloc function
+ *_calloc - similar to calloc function
  *
  *@nmemb: unsigned int
  *@size: unsigned int
