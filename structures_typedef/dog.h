@@ -1,20 +1,19 @@
 #include <stdio.h>
 
 /**
- *struct - dog
+ *struct dog - structure representing a dog
  *@name: pointer to a char
- *@age: pointer to a float
+ *@age: float
  *@owner: pointer to a char
 */
 
-int main(void)
-{
+
 	struct dog 
 	{
 
 		char *name;
 		float age;
 		char *owner;
-	}
-}
+	};
+
 
