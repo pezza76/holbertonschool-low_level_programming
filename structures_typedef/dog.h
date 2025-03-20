@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 
 /**
  *struct - dog
@@ -7,6 +7,8 @@
  *@owner: pointer to a char
 */
 
+int main(void)
+{
 	struct dog 
 	{
 
@@ -14,5 +16,5 @@
 		float age;
 		char *owner;
 	}
-
+}
 
