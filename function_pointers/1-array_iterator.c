@@ -6,7 +6,7 @@
  *
  *@array: pointer
  *@size: size_t
- *action: pointer function that takes int as parameter
+ *@action: pointer function that takes int as parameter
  *Return: void
 */
 
