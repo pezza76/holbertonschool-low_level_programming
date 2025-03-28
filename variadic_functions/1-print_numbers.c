@@ -6,6 +6,7 @@
  *print_numbers - prints numbers with a separator
  *
  *@n: the numbers of integers passed to the function
+ *@separator: string
  *Return: void
 */
 
