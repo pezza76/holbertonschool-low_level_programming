@@ -46,7 +46,7 @@ void print_all(const char * const format, ...)
 				str = va_arg(args, char*);
 
 				if (str == NULL)
-					printf("(nil)")
+					printf("(nil)");
 				else
 					printf("%s", str);
 				break;
