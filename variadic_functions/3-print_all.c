@@ -20,7 +20,7 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	for (i = 0; format[i] != '\0'; i++)
+	while (format[i] != '\0')
 	{
 		switch (format[i])
 		{
@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 				c = (char)va_arg(args, int);
 
 				printf("%c", c);
-				break;
+				break;i
 			case 'i':
 				num = va_arg(args, int);
 
@@ -51,6 +51,7 @@ void print_all(const char * const format, ...)
 					printf("%s", str);
 				break;
 			}
+			i++;
 		}
 	}
 }
