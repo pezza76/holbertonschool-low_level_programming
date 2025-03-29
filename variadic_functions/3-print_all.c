@@ -13,6 +13,10 @@ void print_all(const char * const format, ...)
 {
 	int i;
 	va_list args;
+	char c;
+	int num;
+	double num2;
+	char *str;
 
 	va_start(args, format);
 
@@ -21,25 +25,25 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				char c = (char)va_arg(args, int);
+				c = (char)va_arg(args, int);
 
 				printf("%c", c);
 				break;
 			case 'i':
-				int num = va_arg(args, int);
+				num = va_arg(args, int);
 
 				printf("%i", num);
 				break;
 			case 'f':
 			{
-				double num2 = va_arg(args, double);
+				num2 = va_arg(args, double);
 
 				printf("%.2f", num2);
 				break;
 			}
 			case 's':
 			{
-				char *str = va_arg(args, char*);
+				str = va_arg(args, char*);
 
 				if (str == NULL)
 					printf("(nil)")
