@@ -22,15 +22,16 @@ void print_all(const char * const format, ...)
                 if (format == NULL)
         {
                 
-                return (1);
+                return;
         }
         va_start(args, format);
     
         while (format[i] != '\0')
         {
-                if (first == 0)
+                while (first == 0)
                 {
                         printf(", ");
+			break;
                 }
                 switch (format[i])
                 {
@@ -58,7 +59,7 @@ void print_all(const char * const format, ...)
                         {
                                 str = va_arg(args, char*);
 
-                                while (str == NULL)
+                                if (str == NULL)
                                 {
                                        printf("(nil)");
                                         first = 0;
