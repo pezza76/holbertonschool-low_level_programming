@@ -64,6 +64,8 @@ void print_all(const char * const format, ...)
 					first = 0;
 					break;
 			}
+			default:
+			first = 1;
 			
 		}
 		i++;
