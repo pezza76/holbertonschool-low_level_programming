@@ -33,17 +33,20 @@ void print_all(const char * const format, ...)
 				c = (char)va_arg(args, int);
 
 				printf("%c", c);
+				first = 0;
 				break;
 			case 'i':
 				num = va_arg(args, int);
 
 				printf("%i", num);
+				first = 0;
 				break;
 			case 'f':
 			{
 				num2 = va_arg(args, double);
 
 				printf("%f", num2);
+				first = 0;
 				break;
 			}
 			case 's':
@@ -53,15 +56,16 @@ void print_all(const char * const format, ...)
 				if (str == NULL)
 				{
 					printf("(nil)");
+					first = 0;
 					break;
 				}
 				
 					printf("%s", str);
+					first = 0;
 					break;
 			}
 			
 		}
-		first = 0;
 		i++;
 	}
 	va_end(args);
