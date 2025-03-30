@@ -11,61 +11,70 @@
 
 void print_all(const char * const format, ...)
 {
-    va_list args;
-    int idx = 0;
-    int separator = 0;
-    char current_char;
-    char *str;
-    char *to_print;
-
-    va_start(args, format);
-
-    while (format && format[idx])
-    {
-        current_char = format[idx];
-        if (separator == 1)
-            printf(", ");
-
-        separator = 0;
-        current_char = format[idx] - 'c';
-        while (current_char >= 0 && current_char <= ('s' - 'c'))
+        int i = 0;
+        va_list args;
+        char c;
+        int num;
+        double num2;
+        char *str;
+        int first = 1;
+        
+                if (format == NULL)
         {
-            if (current_char == 0) /* 'c' - 'c' */
-            {
-                printf("%c", va_arg(args, int));
-                separator = 1;
-            }
-            current_char = format[idx] - 'i';
-            if (current_char == 0) /* 'i' - 'i' */
-            {
-                printf("%d", va_arg(args, int));
-                separator = 1;
-            }
-            current_char = format[idx] - 'f';
-            if (current_char == 0) /* 'f' - 'f' */
-            {
-                printf("%f", va_arg(args, double));
-                separator = 1;
-            }
-            current_char = format[idx] - 's';
-            if (current_char == 0) /* 's' - 's' */
-            {
-                str = va_arg(args, char *);
-                to_print = "(nil)";
-                if (str != NULL)
-                    to_print = str;
-                printf("%s", to_print);
-                separator = 1;
-            }
-            current_char = -1; /* Exit the inner while loop */
+                printf("(nil)\n");
+                return;
         }
+        va_start(args, format);
+    
+        while (format[i] != '\0')
+        {
+                if (first == 0)
+                {
+                        printf(", ");
+                }
+                switch (format[i])
+                {
+                        case 'c':
+                                c = (char)va_arg(args, int);
 
-        idx++;
-    }
+                                printf("%c", c);
+                                first = 0;
+                                break;
+                        case 'i':
+                                num = va_arg(args, int);
 
-    if (separator == 0 && !format)
-        printf("(nil)");
+                                printf("%i", num);
+                                first = 0;
+                                break;
+                        case 'f':
+                         {
+                                num2 = va_arg(args, double);
 
-    printf("\n");
-    va_end(args);
+                                printf("%f", num2);
+                                first = 0;
+                                break;
+                        }
+                        case 's':
+                        {
+                                str = va_arg(args, char*);
+
+                                while (str == NULL)
+                                {
+                                       printf("(nil)");
+                                        first = 0;
+                                        break;
+                                }
+
+                                        printf("%s", str);
+                                        first = 0;
+                                        break;
+                        }
+                        default:
+                        first = 1;
+
+                }
+                i++;
+        }
+        va_end(args);
+        printf("\n");
 }
