@@ -18,7 +18,12 @@ void print_all(const char * const format, ...)
 	double num2;
 	char *str;
 	int first = 1;
-
+	
+	if (format == NULL)
+	{
+		printf("(nil)\n")
+		return;
+	}
 	va_start(args, format);
 
 	while (format[i] != '\0')
