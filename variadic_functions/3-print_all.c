@@ -21,8 +21,8 @@ void print_all(const char * const format, ...)
         
                 if (format == NULL)
         {
-               printf(""); 
-                return;
+                
+                return (1);
         }
         va_start(args, format);
     
