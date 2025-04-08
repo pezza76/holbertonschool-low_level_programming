@@ -5,7 +5,7 @@
 /**
  *dlistint_len - returns the number of elements
  *
- *@h: pointer 
+ *@h: pointer
  *Return: size_t number
 */
 
